@@ -5,7 +5,7 @@ Screenshot de la portada
 
 
 ###Formato según reglamento
-![Reglamento de pregrado](http://www.inele.ufro.cl/archivos/Reglamento_Trabajo_de_Titulo_FICA.pdf)
+[Reglamento de pregrado](http://www.inele.ufro.cl/archivos/Reglamento_Trabajo_de_Titulo_FICA.pdf)
 
 ###Autores
 
