@@ -1,40 +1,155 @@
-\documentclass[letter]{article}%(fold)
+\documentclass[letterpaper, 12pt]{article}%(fold)
 \usepackage{anysize}
-\marginsize{3cm}{3cm}{2cm}{2cm}
+\marginsize{3cm}{2cm}{2cm}{2cm}
 \usepackage[spanish]{babel}
 \usepackage{multirow}
 \usepackage{ucs}
 \usepackage{appendix}
 \usepackage{cancel}
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{enumerate}
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amsmath}
-\setcounter{page}{1}%(end)
+
+\newcommand\universidad{Universidad de la Frontera}
+\newcommand\facultad{Facultad de Ingenieria Ciencias y Administracion}
+\newcommand\departamento{Departamento de Ingenieria Matematica}
+\newcommand\tituloTrabajo{Titulo del trabajo}
+\newcommand\nombrecompleto{nombre completo del alumno}
+\newcommand\annotrabajo{2011}
+\newcommand\titulocarrera{Ingeniero civil matemático}
+\newcommand\profesorguia{Nombre Profesor Guia}
+\newcommand\profesorcoguia{Nombre Profesor co-guia}
+
+\newcommand\footer{
+\begin{minipage}[b]{\textwidth}
+\begin{center}
+		\textbf{
+			\MakeUppercase\nombrecompleto\\
+			\annotrabajo
+		}
+\end{center}
+\end{minipage}
+}
+
+\newcommand\header{
+\begin{minipage}{0.1\textwidth}
+\includegraphics[width=1.2\textwidth]{images/logoUFRO.jpg}
+\end{minipage}
+\hfill
+\begin{minipage}{0.9\textwidth}
+\begin{center}
+	\textbf{
+		\MakeUppercase\universidad\\
+		\MakeUppercase\facultad\\
+		\MakeUppercase\departamento
+	}
+\end{center}	
+\end{minipage}
+}
+
+
+
+\newcommand\boxtitle{
+\begin{minipage}{\textwidth}
+	\begin{center}
+		\textbf{ ``\tituloTrabajo''}
+	\end{center}
+\end{minipage}
+}
+
+
 \begin{document}%(fold)
 %\maketitle
+
+
+
 \begin{titlepage}
-	\includegraphics[scale=0.15]{images/logoUFRO.jpg}
-	\vspace{-2cm}
-	\begin{center}
-		Universidad de La Frontera\\
-		Facultad de Ingeniería Ciencias y Administración\\
-		Departamento de Ingeniería Matemática
-	\end{center}
-	\vspace{7.5cm}
-	\begin{center}
-		\begin{Large}
-			\textbf{``Titulo"}
-		\end{Large}
-	\end{center}
-	\vspace{10cm}
-	\begin{center}
-		{\large Autor\\ \the\year}
-	\end{center}
+	\header	
+	\vfill
+	\boxtitle
+	\vfill
+	\footer
 \end{titlepage}
+
+\newpage
+
+\header
+\vfill
+\boxtitle
+\vfill
+\hfill
+\begin{minipage}{0.6\textwidth}
+\begin{center}
+	\rule[0mm]{\textwidth}{1mm}
+	\textbf{TRABAJO PARA OPTAR AL TÍTULO \newline
+	DE \MakeUppercase\titulocarrera \newline}
+	\rule[2mm]{\textwidth}{1mm}
+\end{center}
+\end{minipage}
+\vfill
+\begin{minipage}{\textwidth}
+\begin{flushright}
+\textbf{Profesor Guía:} \profesorguia \\
+\textbf{Profesor Co-guía:} \profesorcoguia
+\end{flushright}
+\end{minipage}
+\vfill
+\footer
+
+
+\newpage
+\begin{minipage}{\textwidth}
+\begin{center}
+\textbf{
+	\MakeUppercase\tituloTrabajo \\
+	\MakeUppercase\nombrecompleto \\
+	COMISIÓN EXAMINADORA
+}
+\end{center}
+\end{minipage}
+\vfill
+
+\begin{minipage}{\textwidth}
+\begin{center}
+\textbf{
+	\MakeUppercase\profesorguia \\
+	Profesor Guía
+}
+\end{center}
+\end{minipage}
+
+\vfill
+
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+NOMBRE PROFESOR \\
+Profesor Examinador 1
+\end{center}
+\end{minipage}
+\hfill
+\begin{minipage}{0.5\textwidth}
+\begin{center}
+NOMBRE PROFESOR \\
+Profesor Examinador 2
+\end{center}
+\end{minipage}
+
+\vfill
+\hfill
+\begin{minipage}{0.5\textwidth}
+\begin{flushleft}
+\textbf{ Nota trabajo escrito: \\
+	Nota examen: \\
+	Nota final: \\
+}
+\end{flushleft}
+\end{minipage}
+
+
 %\begin{abstract}%(fold)
 %\end{abstract}%(end)
 \end{document}%(end)
